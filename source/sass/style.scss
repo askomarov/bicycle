@@ -7,11 +7,13 @@
 @import "blocks/header.scss";
 @import "blocks/header-menu.scss";
 @import "blocks/menu-button.scss";
-
+// главный блок с формой
 @import "blocks/hero.scss";
+@import "blocks/hero-text-content.scss";
+@import "blocks/form.scss";
 
 // Факты о нас
-// @import "blocks/about.scss";
+@import "blocks/about.scss";
 
 // Виды велосипедов
 // @import "blocks/catalog.scss";
@@ -21,3 +23,4 @@
 
 // карта + контакты
 @import "blocks/footer.scss";
+@import "blocks/contacts-list.scss";
