@@ -7,7 +7,7 @@
   }
 
   @media (max-width: $width-desktop+px) {
-    background: transparent url("../img/hero-img-tablet.jpg") no-repeat;
+    background-image: url("../img/hero-img-tablet.jpg");
     background-size: 100% 340px;
 
     @media (min-resolution: 2dppx) {
@@ -16,7 +16,7 @@
   }
 
   @media (max-width: $width-tablet+px) {
-    background: transparent url("../img/hero-img-mobile.jpg") no-repeat;
+    background-image: url("../img/hero-img-mobile.jpg");
     background-size: 100% 390px;
 
     @media (min-resolution: 2dppx) {
@@ -40,9 +40,21 @@
     grid-template-rows: min-content min-content;
     max-width: initial;
     margin-top: -50px;
-    padding: 134px 50px 35px;
+    padding: 134px 0 0;
     justify-items: center;
     min-height: initial;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    padding-top: 121px;
+  }
+}
+
+.hero__column {
+  @media (max-width: $width-desktop+px) {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
   }
 
   @media (max-width: $width-tablet+px) {
@@ -53,6 +65,22 @@
 
 .hero__column--text-content {
   @media (max-width: $width-desktop+px) {
-    margin-bottom: 64px;
+    padding-bottom: 64px;
+  }
+  @media (max-width: $width-tablet+px) {
+    padding-bottom: 53px;
+  }
+}
+
+.hero__column--form {
+  @media (max-width: $width-desktop+px) {
+    display: grid;
+    justify-content: center;
+    padding-top: 70px;
+    background: #ffffff;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    padding-bottom: 35px;
   }
 }

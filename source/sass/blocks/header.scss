@@ -1,5 +1,5 @@
 .header {
-  z-index: 2;
+  z-index: 50;
 }
 
 .header__container {
@@ -9,7 +9,6 @@
   @media (max-width: $width-desktop+px) {
     padding: 0;
     max-width: 100%;
-    padding-left: 22px;
   }
 }
 
@@ -22,8 +21,14 @@
   }
 
   @media (max-width: $width-desktop+px) {
+    margin-left: 22px;
+    margin-top: 20px;
     display: flex;
     width: 67.6px;
     height: 20.28px;
+  }
+
+  @media (max-width: $width-tablet+px) {
+    margin-left: 16px;
   }
 }

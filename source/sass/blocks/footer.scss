@@ -12,8 +12,7 @@
     font-weight: 600;
     font-size: 30px;
     line-height: 30px;
-    margin-top: 0;
-    margin-bottom: 30px;
+    margin: 0 0 13px;
     letter-spacing: -0.005em;
     color: #1f1f1f;
   }
@@ -34,7 +33,7 @@
 
     h2 {
       font-size: 24px;
-      margin-bottom: 20px;
+      margin-bottom: 3px;
     }
 
     p {
@@ -50,7 +49,9 @@
     h2 {
       font-size: 18px;
       line-height: 30px;
+      margin-bottom: 20px;
     }
+
     p {
       margin-top: 0;
     }
@@ -61,7 +62,7 @@
   height: 530px;
   position: relative;
   width: 100%;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
   background: #cccccc;
 
   img {

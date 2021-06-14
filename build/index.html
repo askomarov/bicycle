@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page">
+<body class="page page--no-js">
   <svg style="display: none">
   <defs>
     <clipPath id="clip0">
@@ -68,7 +68,7 @@
           </a>
         </li>
         <li class="header-menu__item">
-          <a href="#pricing" class="header-menu__link">
+          <a href="#bikes" class="header-menu__link">
             <span class="header-menu__link-text">Виды велосипедов</span>
             <svg width="25" height="25" class="header-menu__link-icon">
               <use xlink:href="#icon-arrow"></use>
@@ -76,7 +76,7 @@
           </a>
         </li>
         <li class="header-menu__item">
-          <a href="#pricing" class="header-menu__link">
+          <a href="#video" class="header-menu__link">
             <span class="header-menu__link-text">Видео про велосипеды</span>
             <svg width="25" height="25" class="header-menu__link-icon">
               <use xlink:href="#icon-arrow"></use>
@@ -84,7 +84,7 @@
           </a>
         </li>
         <li class="header-menu__item">
-          <a href="#pricing" class="header-menu__link">
+          <a href="#contacts" class="header-menu__link">
             <span class="header-menu__link-text">Контакты</span>
             <svg width="25" height="25" class="header-menu__link-icon">
               <use xlink:href="#icon-arrow"></use>
@@ -111,21 +111,26 @@
       <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
     </div>
 
-    <form class="hero__column form" action="#" method="POST">
-      <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-      <label for="name">
-        <input type="text" id="name" name="name" placeholder="Введите Ваше Имя">
-      </label>
-      <label for="tel">
-        <input type="tel" name="tel" id="tel" placeholder="Введите Ваш номер телефона" autocomplete="off" minlength="7" maxlength="11" pattern="[0-9]{11}" required="">
-      </label>
-      <button type="submit">Подобрать велосипед мечты</button>
-    </form>
+    <div class="hero__column hero__column--form">
+
+      <form class="form" action="#" method="POST">
+        <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+        <label for="name">
+          <input type="text" id="name" name="name" placeholder="Введите Ваше Имя">
+        </label>
+        <label for="tel">
+          <input type="tel" name="tel" id="tel" placeholder="Введите Ваш номер телефона" autocomplete="off" minlength="7" maxlength="11" pattern="[0-9]{11}" required="">
+        </label>
+        <button type="submit">Подобрать велосипед мечты</button>
+      </form>
+
+    </div>
   </div>
 
 </section>
 
     <section class="about">
+  <a name="about"></a>
   <div class="about__container container about__content">
     <h2>Несколько фактов о нас</h2>
     <ul>
@@ -138,10 +143,73 @@
 
 </section>
 
-    <!-- <include src="source/html/contact.html"></include> -->
+    <section class="bikes">
+  <a name="bikes"></a>
+  <div class="bikes__container container">
+    <h2>Виды велосипедов</h2>
+    <ul class="bikes__list bikes-list">
+      <li class="bikes-list__item item-bike">
+        <div class="item-bike__img-wpra item-bike__img-wpra--road">
+          <picture>
+            <!-- 1x:342px; 2x: 684px -->
+            <source type="image/webp" srcset="img/type-bike-1-desktop.webp 1x, img/type-bike-1-desktop@2x.webp 2x">
+            <img src="img/type-bike-1-desktop.jpg" srcset="img/type-bike-1-desktop@2x.jpg 2x" width="342" height="503" alt="Дорожный велосипед" loading="lazy">
+          </picture>
+        </div>
+        <h3>Дорожный велосипед</h3>
+      </li>
+      <li class="bikes-list__item item-bike">
+        <div class="item-bike__img-wpra item-bike__img-wpra--mount">
+          <picture>
+            <!-- 1x:342px; 2x: 684px -->
+            <source type="image/webp" srcset="img/type-bike-2-desktop.webp 1x, img/type-bike-2-desktop@2x.webp 2x">
+            <img src="img/type-bike-2-desktop.jpg" srcset="img/type-bike-2-desktop@2x.jpg 2x" width="342" height="503" alt="Горный велосипед" loading="lazy">
+          </picture>
+        </div>
+        <h3>Горный велосипед</h3>
+      </li>
+      <li class="bikes-list__item item-bike">
+        <div class="item-bike__img-wpra item-bike__img-wpra--child">
+          <picture>
+            <!-- 1x:342px; 2x: 684px -->
+            <source type="image/webp" srcset="img/type-bike-3-desktop.webp 1x, img/type-bike-3-desktop@2x.webp 2x">
+            <img src="img/type-bike-3-desktop.jpg" srcset="img/type-bike-3-desktop@2x.jpg 2x" width="342" height="503" alt="Детский велосипед" loading="lazy">
+          </picture>
+        </div>
+        <h3>Детский велосипед</h3>
+      </li>
+    </ul>
+
+  </div>
+
+</section>
+
+    <section class="video">
+  <a name="video"></a>
+  <div class="video__container container">
+    <h2>Видео про велосипеды</h2>
+    <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+    <div class="video__video-box">
+      <picture>
+        <!-- 1x:929px; 2x: 1858px -->
+        <source type="image/webp" srcset="img/video-preview-img-desktop.webp 1x, img/video-preview-img-desktop@2x.webp 2x">
+        <img class="" src="img/video-preview-img-desktop.jpg" srcset="img/video-preview-img-desktop@2x.jpg 2x" width="929" height="522" alt="заствка видео" loading="lazy">
+      </picture>
+      <button type="button" class="video__btn-play">
+        <svg class="video__btn-play-icon" width="13" height="18.2">
+          <use xlink:href="#icon-play"></use>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+
+</section>
+
   </main>
 
   <footer class="footer">
+  <a name="contacts"></a>
   <div class="footer__container container">
 
     <h2>Как нас найти?</h2>

@@ -1,0 +1,140 @@
+.item-bike {
+  position: relative;
+
+  h3 {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 34px;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #000000;
+    margin: 20px 0 0;
+  }
+}
+
+.item-bike__img-wpra {
+  position: relative;
+  width: 100%;
+  height: 503px;
+  border-radius: 10px;
+
+  img {
+    z-index: 2;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+
+  @media (max-width: $width-desktop+px) {
+    height: 300px;
+  }
+}
+
+.item-bike__img-wpra--road {
+  margin-top: 10px;
+
+  &::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    bottom: 167px;
+    left: -60px;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 27px solid $primary-color;
+  }
+
+  @media (max-width: $width-desktop+px) {
+    margin: 0;
+
+    &::after {
+      width: 127px;
+      height: 127px;
+      border-width: 18px;
+      bottom: -28px;
+      left: -37px;
+    }
+  }
+
+  @media (max-width: $width-tablet+px) {
+    &::after {
+      left: -24px;
+    }
+  }
+}
+
+.item-bike__img-wpra--mount {
+  margin-top: 39px;
+  height: 566px;
+  &::after,
+  &::before {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    z-index: 3;
+    width: 47px;
+    height: 47px;
+    border: 8px solid $primary-color;
+  }
+
+  &::after {
+    top: -18px;
+    left: -19px;
+  }
+
+  &::before {
+    right: -23px;
+    bottom: -23px;
+  }
+
+  @media (max-width: $width-desktop+px) {
+    height: 300px;
+    margin: 0;
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.item-bike__img-wpra--child {
+  height: 512px;
+
+  &::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    z-index: 3;
+    top: -32px;
+    right: -36px;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 17px solid $primary-color;
+  }
+
+  @media (max-width: $width-desktop+px) {
+    height: 300px;
+
+    &::after {
+      width: 68px;
+      height: 68px;
+      border-width: 13px;
+      top: -20px;
+      right: -25px;
+    }
+  }
+
+  @media (max-width: $width-tablet+px) {
+    &::after {
+      top: -20px;
+      right: -15px;
+    }
+  }
+}

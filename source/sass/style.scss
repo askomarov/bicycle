@@ -7,20 +7,12 @@
 @import "blocks/header.scss";
 @import "blocks/header-menu.scss";
 @import "blocks/menu-button.scss";
-// главный блок с формой
 @import "blocks/hero.scss";
 @import "blocks/hero-text-content.scss";
 @import "blocks/form.scss";
-
-// Факты о нас
 @import "blocks/about.scss";
-
-// Виды велосипедов
-// @import "blocks/catalog.scss";
-
-// Видео про велосипеды
-// @import "blocks/video.scss";
-
-// карта + контакты
+@import "blocks/bikes.scss";
+@import "blocks/item-bike.scss";
+@import "blocks/video.scss";
 @import "blocks/footer.scss";
 @import "blocks/contacts-list.scss";
