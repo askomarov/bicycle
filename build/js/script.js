@@ -23,10 +23,9 @@ const closeMenu = () => {
 
 // //////////////// КОНЕЦ меню бургер
 
-const menuLinkCloseMenu = (evt) => {
+const onMenuLinkClickCloseMenu = (evt) => {
   if (evt.target.classList.contains('header-menu__link')) {
     closeMenu();
-    console.log('попал  в ссылку!, закрыл меню');
   }
 };
 
@@ -38,10 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
   menuButton.addEventListener('click', () => {
     if (headerMenu.classList.contains('header-menu--closed')) {
       showMenu();
-      headerMenu.addEventListener('click', menuLinkCloseMenu)
+      headerMenu.addEventListener('click', onMenuLinkClickCloseMenu);
     } else {
       closeMenu();
-      headerMenu.removeEventListener('click', menuLinkCloseMenu)
+      headerMenu.removeEventListener('click', onMenuLinkClickCloseMenu);
     }
   });
 });
