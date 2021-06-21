@@ -1,6 +1,8 @@
 .hero {
   background: #232323 url("../img/hero-img-desktop.jpg") no-repeat;
   background-size: 100% 825px;
+  background-position: top center;
+  background-size: contain;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/hero-img-desktop@2x.jpg");
@@ -8,7 +10,7 @@
 
   @media (max-width: $width-desktop+px) {
     background-image: url("../img/hero-img-tablet.jpg");
-    background-size: 100% 340px;
+    background-size: 768px 340px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-img-tablet@2x.jpg");
@@ -17,7 +19,7 @@
 
   @media (max-width: $width-tablet+px) {
     background-image: url("../img/hero-img-mobile.jpg");
-    background-size: 100% 390px;
+    background-size: 320px 390px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-img-mobile@2x.jpg");
