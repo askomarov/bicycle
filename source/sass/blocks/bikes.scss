@@ -55,7 +55,7 @@
   }
 
   @media (max-width: $width-tablet+px) {
-    gap: 42px;
+    gap: 0px;
   }
 }
 
@@ -64,5 +64,11 @@
 
   @media (max-width: $width-desktop+px) {
     flex: 0 0 270px;
+  }
+
+  &:not(:last-child) {
+    @media (max-width: $width-tablet+px) {
+      margin-bottom: 42px;
+    }
   }
 }

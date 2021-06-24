@@ -57,6 +57,16 @@
 
 .contacts-list__link--tel {
   padding-right: 10px;
+
+  @media (max-width: $width-tablet+px) {
+    padding-right: 6px;
+  }
+
   .contacts-list__link-icon {
+    @media (max-width: $width-tablet+px) {
+      position: relative;
+      left: -15px;
+      margin-right: 0;
+    }
   }
 }

@@ -54,6 +54,7 @@
 
     p {
       margin-top: 0;
+      margin-bottom: 19px;
     }
   }
 }
@@ -82,7 +83,11 @@
   @media (max-width: $width-tablet+px) {
     height: 250px;
     width: calc(100% + 32px);
-    margin: 0 -16px 33px;
+    margin: 0 -16px 32px;
+    
+    img {
+      object-fit: initial;
+    }
   }
 }
 
