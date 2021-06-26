@@ -1,4 +1,5 @@
 .hero {
+  padding-top: 62px;
   background: #232323 url("../img/hero-img-desktop.jpg") no-repeat;
   background-position: top center;
   background-size: cover;
@@ -8,6 +9,7 @@
   }
 
   @media (max-width: $width-desktop+px) {
+    padding-top: 0;
     background-image: url("../img/promo-img-tablet.jpg");
     background-size: 100% auto;
 
