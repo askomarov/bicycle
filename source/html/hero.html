@@ -15,11 +15,13 @@
       <form class="form" action="#" method="POST">
         <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
         <label for="name">
-          <input type="text" minlength="2" maxlength="20" id="name" name="name" placeholder="Введите Ваше Имя" pattern="[A-Za-zА-Яа-яЁё]" required>
+          <input type="text" minlength="2" maxlength="20" id="name" name="name" placeholder="Введите Ваше Имя"
+            pattern="[A-Za-zА-Яа-яЁё]{2,20}" required>
         </label>
         <label for="tel">
           <input type="tel" name="tel" id="tel" placeholder="Введите Ваш номер телефона" autocomplete="off"
-            minlength="7" maxlength="16" pattern="([\+]*[7-8]{1}\s?[\(]*[0-9]{3-11}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})" required>
+            minlength="7" maxlength="16" pattern="([\+]*[7-8]{1}\s?[\(]*[0-9]{3-11}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2})"
+            required>
         </label>
         <button type="submit">Подобрать велосипед мечты</button>
       </form>
